@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ktnd.site</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 外部サイトのリンク -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- 外部リンク -->
+
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div>
+
+        <img class="logo" src="img/favicon.png" 
+        alt="ktndのロゴ" 
+        width="30" 
+        height="30"
+        class="icon">
+      </div>
+      <div>
+        <h1>北野田会衆のウェブサイト </h1>
+     
+        <ul>
+         
+          <li class="icon2">
+            <a href="#">
+              <img src="img/home.png" alt="ホーム画面アイコン" width="20" height="20">
+            </a>
+          </li>
+          <li class="icon2">
+            <a href="#">
+              
+              <img src="img/map.png" alt="区域のページアイコン" width="20" height="20">
+            </a>
+          </li>
+          <li class="icon2">
+            <a href="#">
+              <img src="img/home.png" alt="ホーム画面アイコン" width="20" height="20">
+            </a>
+          </li>
+          <li class="icon2">
+            <a href="#">
+              <img src="img/home.png" alt="ホーム画面アイコン" width="20" height="20">
+            </a>
+          </li>
+          <li class="icon2">
+            <a href="#">
+              <img src="img/home.png" alt="ホーム画面アイコン" width="20" height="20">
+            </a>
+          </li>
+       
+        </ul>
+
+      </div>
+    </div>
+  </header>
+ 
+
+  <!-- ボタン -->
+  <div class="co">
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        会衆の掲示板
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+  <!-- ボタン -->
+
+
+
+  <div class="box">  </div>
+  
+  <div class="message">hello</div>
+  <script src="js/main.js"></script>
+
+  <footer>
+    <small>
+      (c)ktnd.site 2019-2022
+    </small>
+  </footer>
+<script>
+
+  const successCallback = (position) => {
+    console.log(position);
+  };
+  const errorCallback = (position) => {
+    console.log(position);
+  };
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+
+</script>
+
+</body>
+</html>
+
+

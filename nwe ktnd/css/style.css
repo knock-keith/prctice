@@ -1,0 +1,139 @@
+/* common */
+
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+
+/* header */
+
+header {
+  background: #efefef;
+}
+
+header .container{
+width: 400px;
+margin: 0 auto;
+padding: 32px 0;
+display: flex;
+}
+
+header .container div + div {
+  margin-left: 32px;
+}
+
+header h1 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul li + li {
+  margin-left: 8px;
+}
+
+
+
+/* main */
+
+.logo {
+  transition-property: transform;
+  transition-duration: 1s;
+  transform-origin: top;
+}
+.logo:hover {
+  transform: rotate(400deg);
+  /* transform: scale(.6, 2); */
+}
+
+.icon2 {
+  transition-property: transform;
+  transition-duration: .3s;
+}
+
+.icon2:hover {
+transform: scale(2, 2);
+
+/* transform: rotate(360deg); */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: rgb(158, 255, 119);
+  border-radius: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: background .3s;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes move {
+ 0% {
+   transform: none;
+ }
+ 80%{
+   transform: translateX(100px) rotate(360deg);
+ }
+ 100%{
+   transform: translateY(200px) rotate(360deg);
+ }
+}
+
+.box:hover {
+  background: rgb(52, 238, 245);
+}
+
+.message {
+  width: 300px;
+  padding: 8px 16px;
+  background:rgba(0, 153, 255, 0.774);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  animation: popup 8s forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  5%, 95% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+/* footer */
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  color: #aaa;
+}
